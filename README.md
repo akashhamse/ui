@@ -4,26 +4,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
-    android:layout_weightSum="5"
-    >
+   >
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:weightSum="4"
-        android:id="@+id/rowOne"
-        android:layout_weight="1">
+        android:id="@+id/rowOne">
 
         <Button
             android:layout_width="0dp"
-            android:layout_height="112dp"
+            android:layout_height="115dp"
             android:text="@string/clear"
             android:id="@+id/button1"
             android:layout_weight="1"
             android:textColor="#ffffff"
             android:background="#FF0000"
             android:textSize="23dp"
-            android:layout_margin="2dp"
+
             android:onClick="funcClear"
             />
 
@@ -32,17 +30,18 @@
             android:layout_height="match_parent"
             android:layout_weight="2"
             android:background="#ffffff"
-            android:layout_margin="2dp"/>
+            android:id="@+id/edit"
+            />
         <Button
             android:layout_width="0dp"
-            android:layout_height="112dp"
+            android:layout_height="match_parent"
             android:text="@string/backSpace"
             android:id="@+id/button2"
             android:layout_weight="1"
             android:textColor="#ffffff"
             android:background="#FF0000"
             android:textSize="23dp"
-            android:layout_margin="2dp"
+
             android:onClick="funcDel"/>
 
 
@@ -57,7 +56,7 @@
         android:weightSum="4"
         android:id="@+id/rowTwo"
         android:layout_below="@+id/rowOne"
-        android:layout_weight="1">
+        >
 
         <Button
             android:layout_width="0dp"
@@ -68,7 +67,7 @@
             android:textColor="#ffffff"
             android:background="#696969"
             android:textSize="40dp"
-            android:layout_margin="2dp"
+
             android:onClick="funcOne"/>
         <Button
             android:layout_width="0dp"
@@ -79,7 +78,7 @@
             android:textColor="#ffffff"
             android:background="#696969"
             android:textSize="40dp"
-            android:layout_margin="2dp"
+
             android:onClick="funcTwo"/>
         <Button
             android:layout_width="0dp"
@@ -90,7 +89,7 @@
             android:textColor="#ffffff"
             android:background="#696969"
             android:textSize="40dp"
-            android:layout_margin="2dp"
+
             android:onClick="funcThree"/>
 
         <Button
@@ -102,7 +101,7 @@
             android:textColor="#ffffff"
             android:background="#00BFFF"
             android:textSize="40dp"
-            android:layout_margin="2dp"
+
             android:onClick="funcDiv"/>
 
 
@@ -117,7 +116,7 @@
         android:weightSum="4"
         android:id="@+id/rowThree"
         android:layout_below="@+id/rowTwo"
-        android:layout_weight="1">
+        >
 
         <Button
             android:layout_width="0dp"
@@ -128,7 +127,6 @@
             android:textColor="#ffffff"
             android:background="#696969"
             android:textSize="40dp"
-            android:layout_margin="2dp"
             android:onClick="funcFour"/>
         <Button
             android:layout_width="0dp"
@@ -139,7 +137,6 @@
             android:textColor="#ffffff"
             android:background="#696969"
             android:textSize="40dp"
-            android:layout_margin="2dp"
             android:onClick="funcFive"/>
         <Button
             android:layout_width="0dp"
@@ -150,7 +147,7 @@
             android:textColor="#ffffff"
             android:background="#696969"
             android:textSize="40dp"
-            android:layout_margin="2dp"
+
             android:onClick="funcSix"/>
 
         <Button
@@ -162,7 +159,7 @@
             android:textColor="#ffffff"
             android:background="#00BFFF"
             android:textSize="40dp"
-            android:layout_margin="2dp"
+
             android:onClick="funcMul"/>
 
 
@@ -178,7 +175,7 @@
         android:weightSum="4"
         android:id="@+id/rowFour"
         android:layout_below="@+id/rowThree"
-        android:layout_weight="1">
+        >
 
         <Button
             android:layout_width="0dp"
@@ -189,7 +186,7 @@
             android:textColor="#ffffff"
             android:background="#696969"
             android:textSize="40dp"
-            android:layout_margin="2dp"
+
             android:onClick="funcSeven"/>
         <Button
             android:layout_width="0dp"
@@ -200,7 +197,7 @@
             android:textColor="#ffffff"
             android:background="#696969"
             android:textSize="40dp"
-            android:layout_margin="2dp"
+
             android:onClick="funcEight"/>
         <Button
             android:layout_width="0dp"
@@ -211,7 +208,7 @@
             android:textColor="#ffffff"
             android:background="#696969"
             android:textSize="40dp"
-            android:layout_margin="2dp"
+
             android:onClick="funcNine"/>
 
         <Button
@@ -223,7 +220,7 @@
             android:textColor="#ffffff"
             android:background="#00BFFF"
             android:textSize="40dp"
-            android:layout_margin="2dp"
+
             android:onClick="funcSub"/>
 
 
@@ -239,7 +236,7 @@
         android:weightSum="4"
         android:id="@+id/rowFive"
         android:layout_below="@+id/rowFour"
-        android:layout_weight="1">
+        >
 
         <Button
             android:layout_width="0dp"
@@ -251,7 +248,6 @@
             android:background="#696969"
             android:layout_gravity="center"
             android:textSize="40dp"
-            android:layout_margin="2dp"
             android:onClick="funcZero"/>
         <Button
             android:layout_width="0dp"
@@ -263,7 +259,6 @@
             android:layout_gravity="center"
             android:background="#00BFFF"
             android:textSize="40dp"
-            android:layout_margin="2dp"
             android:onClick="funcDot"/>
         <Button
             android:layout_width="0dp"
@@ -275,7 +270,6 @@
             android:layout_gravity="center"
             android:textColor="#ffffff"
             android:textSize="40dp"
-            android:layout_margin="2dp"
             android:onClick="funcEquals"
             />
 
@@ -289,7 +283,7 @@
             android:textColor="#ffffff"
             android:background="#00BFFF"
             android:textSize="40dp"
-            android:layout_margin="2dp"
+
             android:onClick="funcAdd"/>
 
 
