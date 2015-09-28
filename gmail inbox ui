@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3F51B5"
+        android:id="@+id/action">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/menu"
+            android:text="="
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:textColor="#ffffff"
+            android:padding="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/menu"
+            android:text="Inbox"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:textColor="#ffffff"
+            android:padding="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:textSize="22sp"
+            android:textColor="#ffffff"
+            android:padding="15dp"/>
+    </RelativeLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_below="@+id/action"
+    android:background="#E0E0E0"
+    android:id="@+id/day">
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="8dp"
+       android:text="Today"
+       android:textSize="18sp"
+       android:textColor="#000000"
+       android:padding="12dp"/>
+</LinearLayout>
+
+    <!-- list view 1 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/day"
+        android:layout_margin="1dp"
+        android:id="@+id/listView2" >
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/man1"
+            android:id="@+id/img2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="14dp"
+            android:paddingLeft="8dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Brunch this weekend?"
+            android:layout_toRightOf="@+id/img2"
+            android:id="@+id/mainText2"
+            android:textSize="20sp">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingTop="3dp"
+            android:id="@+id/subText2"
+            android:textStyle="bold"
+            android:layout_below="@+id/mainText2"
+            android:layout_alignLeft="@+id/mainText2"
+            android:textSize="15sp"
+            android:text="Ali connors">
+         </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:id="@+id/hy2"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/subText2"
+            android:layout_alignBottom="@+id/subText2"
+            android:text=" - ">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:layout_below="@+id/mainText2"
+            android:layout_toRightOf="@id/hy2"
+            android:layout_alignBottom="@+id/hy2"
+            android:textSize="15sp"
+            android:text="i wil be in your neighbourhood..">
+        </TextView>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1sp"
+            android:background="#3F51B5"
+            android:layout_below="@+id/img2"
+            android:layout_alignLeft="@+id/subText2">
+
+        </View>
+
+
+
+    </RelativeLayout>
+
+
+<!-- row 2 -->
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listView2"
+        android:layout_margin="1dp"
+        android:id="@+id/listView3" >
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/man1"
+            android:id="@+id/img3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="14dp"
+            android:paddingLeft="8dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Brunch this weekend?"
+            android:layout_toRightOf="@+id/img3"
+            android:id="@+id/mainText3"
+            android:textSize="20sp">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingTop="3dp"
+            android:id="@+id/subText3"
+            android:textStyle="bold"
+            android:layout_below="@+id/mainText3"
+            android:layout_alignLeft="@+id/mainText3"
+            android:textSize="15sp"
+            android:text="Ali connors">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:id="@+id/hy3"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/subText3"
+            android:layout_alignBottom="@+id/subText3"
+            android:text=" - ">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:layout_below="@+id/mainText3"
+            android:layout_toRightOf="@id/hy3"
+            android:layout_alignBottom="@+id/hy3"
+            android:textSize="15sp"
+            android:text="i wil be in your neighbourhood..">
+        </TextView>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1sp"
+            android:background="#3F51B5"
+            android:layout_below="@+id/img3"
+            android:layout_alignLeft="@+id/subText3">
+
+        </View>
+
+
+
+    </RelativeLayout>
+
+
+<!-- row 3 -->
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listView3"
+        android:layout_margin="1dp"
+        android:id="@+id/listView4" >
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/man1"
+            android:id="@+id/img4"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="14dp"
+            android:paddingLeft="8dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Brunch this weekend?"
+            android:layout_toRightOf="@+id/img4"
+            android:id="@+id/mainText4"
+            android:textSize="20sp">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingTop="3dp"
+            android:id="@+id/subText4"
+            android:textStyle="bold"
+            android:layout_below="@+id/mainText4"
+            android:layout_alignLeft="@+id/mainText4"
+            android:textSize="15sp"
+            android:text="Ali connors">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:id="@+id/hy4"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/subText4"
+            android:layout_alignBottom="@+id/subText4"
+            android:text=" - ">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:layout_below="@+id/mainText4"
+            android:layout_toRightOf="@id/hy4"
+            android:layout_alignBottom="@+id/hy4"
+            android:textSize="15sp"
+            android:text="i wil be in your neighbourhood..">
+        </TextView>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1sp"
+            android:background="#3F51B5"
+            android:layout_below="@+id/img4"
+            android:layout_alignLeft="@+id/subText4">
+
+        </View>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
